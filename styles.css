@@ -2,8 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
+
+/* !hero section start */
 
 .hero__section {
     background: url(./images/heroSectionBackground.png);
@@ -80,13 +82,13 @@
 }
 
 .navbar__menu_container .user__icon {
-    width: 30px;
     height: 30px;
+    width: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    border: 1px solid white;
+    border: solid 1px white;
     display: none;
 }
 
@@ -131,3 +133,128 @@
         width: 80%;
     }
 }
+
+/* !hero section end */
+
+/* !Offer Start */
+.container {
+    margin: 48px auto;
+    width: 80%;
+}
+
+.we__offer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.we__offer .card {
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.we__offer .card:hover {
+    transform: scale(1.05);
+}
+
+.we__offer .card img {
+    width: 240px;
+    height: 140px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.we__offer .card h2 {
+    padding: 0 10px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.we__offer .card p {
+    font-size: 10px;
+    padding: 0 10px 10px 10px;
+}
+
+/* !Offer End */
+
+/* !Collection Start */
+.collections h1 {
+    font-weight: 600;
+}
+
+.collections .sub__heading_container {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.sub__heading_container span:nth-child(2) {
+    color: #ff7e8b;
+    font-size: 13px;
+}
+
+.collection_card_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 24px;
+}
+
+.collection_card_container .card {
+    height: 300px;
+    min-width: 240px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.card1 {
+    background: url(./images/collection1.jpg);
+}
+
+.card2 {
+    background: url(./images/collection2.jpg);
+}
+
+.card3 {
+    background: url(./images/collection3.jpg);
+}
+
+.card4 {
+    background: url(./images/collection4.jpg);
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.9)0%,
+            rgba(0, 0, 0, 0.05)50%),
+        rgba(0, 0, 0, 0.05) 85%;
+}
+
+.collection_card_container .card .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    padding: 12px;
+    font-size: 14px;
+}
+
+/* !Collection End */
